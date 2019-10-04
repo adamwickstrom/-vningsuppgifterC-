@@ -1,0 +1,32 @@
+using System;
+
+namespace E4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Välkommen till mässan! Hur gammal är du? ");
+            int alder = int.Parse(Console.ReadLine());
+
+            if (alder < 10)
+            {
+                Console.WriteLine("Du får gå in gratis! ");
+
+            }
+
+            else if (10 <= alder && alder < 20) 
+            {
+                Console.WriteLine("Priset blir 50kr, tack ");
+            }  
+
+            else if (alder > 20)
+            {
+                Console.WriteLine("Priset blir 75kr, tack ");
+            }
+
+
+
+        }
+    }
+}

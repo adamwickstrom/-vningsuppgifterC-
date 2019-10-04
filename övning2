@@ -1,0 +1,33 @@
+using System;
+
+namespace E4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Vad är priset på din vara? (kr) ");
+            int pris = int.Parse(Console.ReadLine());
+
+            if (pris > 500) 
+            {
+                Console.WriteLine("Rabatten är: ");
+                Console.WriteLine(pris * 0.10);
+                Console.WriteLine("kr");
+            }
+
+
+
+            else
+            {
+                Console.WriteLine("Rabatten är: ");
+                Console.WriteLine(pris * 0.02);
+                Console.WriteLine("kr");
+
+            }
+            
+
+
+        }
+    }
+}
